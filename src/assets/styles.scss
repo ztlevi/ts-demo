@@ -1,0 +1,11 @@
+@use "@material/button/styles";
+
+.mdc-brown {
+  --mdc-theme-primary: #795548;
+  --mdc-theme-on-primary: var(--mdc-theme-text-primary-on-dark);
+}
+
+.mdc-red {
+  --mdc-theme-primary: #e53935;
+  --mdc-theme-on-primary: var(--mdc-theme-text-primary-on-dark);
+}
