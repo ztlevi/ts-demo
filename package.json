@@ -14,7 +14,7 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
-      "tsc --noEmit",
+      "bash -c 'tsc -p tsconfig.json --noEmit'",
       "eslint --ignore-path .gitignore --fix",
       "prettier --write"
     ],
