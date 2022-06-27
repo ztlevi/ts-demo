@@ -26,6 +26,7 @@
   "license": "ISC",
   "dependencies": {
     "@material/button": "^14.0.0",
+    "@material/layout-grid": "^14.0.0",
     "@types/node": "^18.0.0"
   },
   "devDependencies": {

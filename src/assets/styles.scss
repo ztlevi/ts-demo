@@ -1,4 +1,5 @@
 @use "@material/button/styles";
+@use "@material/layout-grid/mdc-layout-grid";
 
 .mdc-brown {
   --mdc-theme-primary: #795548;
@@ -8,4 +9,8 @@
 .mdc-red {
   --mdc-theme-primary: #e53935;
   --mdc-theme-on-primary: var(--mdc-theme-text-primary-on-dark);
+}
+
+.mdc-layout-grid__cell {
+  background: #eeeeee;
 }
