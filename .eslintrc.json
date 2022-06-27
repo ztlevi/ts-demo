@@ -22,7 +22,7 @@
         "project": ["./tsconfig.json"]
       },
       "rules": {
-        "no-console": ["warn", { "allow": ["clear", "warning", "info", "error", "dir", "trace"] }],
+        "no-console": ["error", { "allow": ["clear", "warning", "info", "error", "dir", "trace"] }],
         "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
         "jest/no-identical-title": "error",
