@@ -2,7 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   "@material/button": ^14.0.0
+  "@material/drawer": ^14.0.0
   "@material/layout-grid": ^14.0.0
+  "@material/list": ^14.0.0
   "@parcel/config-default": ^2.6.2
   "@parcel/core": ^2.6.2
   "@parcel/transformer-sass": ^2.6.2
@@ -26,7 +28,9 @@ specifiers:
 
 dependencies:
   "@material/button": 14.0.0
+  "@material/drawer": 14.0.0
   "@material/layout-grid": 14.0.0
+  "@material/list": 14.0.0
   "@types/node": 18.0.0
 
 devDependencies:
@@ -1007,6 +1011,26 @@ packages:
       tslib: 2.4.0
     dev: false
 
+  /@material/drawer/14.0.0:
+    resolution:
+      {
+        integrity: sha512-VPrxMIhbkXVbfH7aMFV+Um0tjOVrU/Y65X2hWsVdmjASadE8C5UYjIE3vjL1DM1M+zIa3qZZRUWqz0j1zqbr3w==,
+      }
+    dependencies:
+      "@material/animation": 14.0.0
+      "@material/base": 14.0.0
+      "@material/dom": 14.0.0
+      "@material/elevation": 14.0.0
+      "@material/feature-targeting": 14.0.0
+      "@material/list": 14.0.0
+      "@material/ripple": 14.0.0
+      "@material/rtl": 14.0.0
+      "@material/shape": 14.0.0
+      "@material/theme": 14.0.0
+      "@material/typography": 14.0.0
+      tslib: 2.4.0
+    dev: false
+
   /@material/elevation/14.0.0:
     resolution:
       {
@@ -1047,6 +1071,24 @@ packages:
         integrity: sha512-tAce0PR/c85VI2gf1HUdM0Y15ZWpfZWAFIwaCRW1+jnOLWnG1/aOJYLlzqtVEv2m0TS1R1WRRGN3Or+CWvpDRA==,
       }
     dependencies:
+      tslib: 2.4.0
+    dev: false
+
+  /@material/list/14.0.0:
+    resolution:
+      {
+        integrity: sha512-AFaBGV9vQyfnG8BT2R3UGVdF5w2SigQqBH+qbOSxQhk4BgVvhDfJUIKT415poLNMdnaDtcuYz+ZWvVNoRDaL7w==,
+      }
+    dependencies:
+      "@material/base": 14.0.0
+      "@material/density": 14.0.0
+      "@material/dom": 14.0.0
+      "@material/feature-targeting": 14.0.0
+      "@material/ripple": 14.0.0
+      "@material/rtl": 14.0.0
+      "@material/shape": 14.0.0
+      "@material/theme": 14.0.0
+      "@material/typography": 14.0.0
       tslib: 2.4.0
     dev: false
 

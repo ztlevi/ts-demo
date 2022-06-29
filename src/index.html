@@ -5,48 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Application</title>
     <link href="assets/styles.scss" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   </head>
   <body>
-    <h1>This is an example app.</h1>
-    <h1>Material Design Components</h1>
-    <div class="mdc-touch-target-wrapper">
-      <button class="mdc-button mdc-button--touch mdc-brown">
-        <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__touch"></span>
-        <span class="mdc-button__label">My Accessible Button</span>
-      </button>
-      <br />
-      <button class="mdc-button mdc-button--raised mdc-red">
-        <span class="mdc-button__label">Contained Button</span>
-      </button>
-    </div>
-
-    <br />
-    <a
-      href="https://github.com/material-components/material-components-web/tree/master/packages/mdc-layout-grid"
-      ><h2>Responsive Grid</h2></a
-    >
-    <div class="mdc-layout-grid">
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell">abc</div>
-        <div class="mdc-layout-grid__cell">abc</div>
-        <div class="mdc-layout-grid__cell">abc</div>
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button
+            id="navigation-button"
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+            aria-label="Open navigation menu"
+          >
+            menu
+          </button>
+          <span class="mdc-top-app-bar__title">Page title</span>
+        </section>
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+          role="toolbar"
+        >
+          <button
+            class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+            aria-label="Favorite"
+          >
+            favorite
+          </button>
+          <button
+            class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+            aria-label="Search"
+          >
+            search
+          </button>
+          <button
+            class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+            aria-label="Options"
+          >
+            more_vert
+          </button>
+        </section>
       </div>
-    </div>
-    <br />
-    <div class="mdc-layout-grid">
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell">
-          <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell"><span>Second level</span></div>
-            <div class="mdc-layout-grid__cell"><span>Second level</span></div>
-          </div>
+    </header>
+    <main class="mdc-top-app-bar--fixed-adjust">
+      <aside class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__content">
+          <nav class="mdc-list">
+            <a
+              class="mdc-list-item mdc-list-item--activated"
+              href="#"
+              aria-current="page"
+              tabindex="0"
+            >
+              <span class="mdc-list-item__ripple"></span>
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+              <span class="mdc-list-item__text">Inbox</span>
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+              <span class="mdc-list-item__text">Outgoing</span>
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+              <span class="mdc-list-item__text">Drafts</span>
+            </a>
+          </nav>
         </div>
-        <div class="mdc-layout-grid__cell">First level</div>
-        <div class="mdc-layout-grid__cell">First level</div>
-      </div>
-    </div>
+      </aside>
 
+      <div class="mdc-drawer-scrim"></div>
+
+      <h1>This is an example app.</h1>
+      <h1>Material Design Components</h1>
+      <div class="mdc-touch-target-wrapper">
+        <button class="mdc-button mdc-button--touch mdc-brown">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__touch"></span>
+          <span class="mdc-button__label">My Accessible Button</span>
+        </button>
+        <br />
+        <button class="mdc-button mdc-button--raised mdc-red">
+          <span class="mdc-button__label">Contained Button</span>
+        </button>
+      </div>
+
+      <br />
+      <a
+        href="https://github.com/material-components/material-components-web/tree/master/packages/mdc-layout-grid"
+        ><h2>Responsive Grid</h2></a
+      >
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell">abc</div>
+          <div class="mdc-layout-grid__cell">abc</div>
+          <div class="mdc-layout-grid__cell">abc</div>
+        </div>
+      </div>
+      <br />
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell"><span>Second level</span></div>
+              <div class="mdc-layout-grid__cell"><span>Second level</span></div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__cell">First level</div>
+          <div class="mdc-layout-grid__cell">First level</div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="./index.ts"></script>
   </body>
 </html>
